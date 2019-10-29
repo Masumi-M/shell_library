@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ===== Memo =====
-# Give Permission by `chmod 755 CopyImage.sh`
+# Setup: Give Permission by `chmod 755 CopyImage.sh`
 # Info: Copies JPG image that is inside the current directory.
 
 fileNameRE="*.jpg"

@@ -19,6 +19,9 @@ Copies the image in the current directory that has the extension of `jpg`.
 ### PrintImage
 Prints the image in the current directory that has the extension of `jpg`. 
 
+### ScrapeImage
+Scrapes the image from the browser.
+
 ## Authors
 - [Masumi Morishige](https://github.com/Masumi-M)
 
