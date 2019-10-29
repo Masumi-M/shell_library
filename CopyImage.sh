@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ===== Memo =====
-# Give Permission by `chmod 755 OpenImage.sh`
-# Info: Opens the image in the current directory that has the extension of `jpg`.
+# Give Permission by `chmod 755 CopyImage.sh`
+# Info: Copies JPG image that is inside the current directory.
 
 fileNameRE="*.jpg"
 currentPath="`pwd`"
@@ -11,7 +11,7 @@ for file in `find $currentPath -name "${fileNameRE}" -print`; do
     fileName="${fileNameExt%.*}"
     ext="${file##*.}"
     dir="${file%/*}"
-    `open "${currentPath}/${fileName}.${ext}"`
+    `cp -p $file "${currentPath}/${fileName}_new.${ext}"`
 done
 
 echo "===== start ====="
