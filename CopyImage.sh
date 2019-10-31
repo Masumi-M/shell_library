@@ -5,13 +5,13 @@
 # Info: Copies JPG image that is inside the current directory.
 
 fileNameRE="*.jpg"
-currentPath="`pwd`"
-for file in `find $currentPath -name "${fileNameRE}" -print`; do
+currentPath="$(pwd)"
+for file in $(find $currentPath -name "${fileNameRE}" -print); do
     fileNameExt="${file##*/}"
     fileName="${fileNameExt%.*}"
     ext="${file##*.}"
     dir="${file%/*}"
-    `cp -p $file "${currentPath}/${fileName}_new.${ext}"`
+    $(cp -p $file "${currentPath}/${fileName}_new.${ext}")
 done
 
 echo "===== start ====="

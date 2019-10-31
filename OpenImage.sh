@@ -5,13 +5,13 @@
 # Info: Opens the image in the current directory that has the extension of `jpg`.
 
 fileNameRE="*.jpg"
-currentPath="`pwd`"
-for file in `find $currentPath -name "${fileNameRE}" -print`; do
+currentPath="$(pwd)"
+for file in $(find $currentPath -name "${fileNameRE}" -print); do
     fileNameExt="${file##*/}"
     fileName="${fileNameExt%.*}"
     ext="${file##*.}"
     dir="${file%/*}"
-    `open "${currentPath}/${fileName}.${ext}"`
+    $(open "${currentPath}/${fileName}.${ext}")
 done
 
 echo "===== start ====="
