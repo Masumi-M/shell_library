@@ -30,9 +30,10 @@ for file in $(find $currentPath -name "*.jpg" -print); do
 
     echo -e ">> file \n$file \n$fileNameExt \n"
 
+    $(lpr $file) # default printer
     # `lpr -P $printerName $file`    # custom printer
     # `lpr -P $printerName $file -o PageSize=Postcard.Fullbleed`    # custom printer with option
-    $(lpr $file) # default printer
+
 done
 
 echo -e "===== complete ===== \n"
