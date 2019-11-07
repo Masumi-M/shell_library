@@ -3,7 +3,7 @@
 # ===== Memo =====
 # Setup: Give Permission by `chmod 755 OpenImage_Arg.sh`
 # Info: Opens the image in the current directory that has the extension of `png`.
-# Arg: 1=>keyword(required) / 2=>relative_path(default: ./) / 3=> extention(default: png)
+# Arg: 1=>keyword(required) / 2=>relative_path(default: ./) / 3=>extention(default: png)
 
 echo "===== start ====="
 
