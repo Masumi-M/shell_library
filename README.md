@@ -21,7 +21,7 @@ Opens the image in the current directory that has the extension of `jpg`.
 
 ### OpenImage_Arg
 
-Opens the image in the current directory that has the extension of `png`.
+Opens the image in the current directory that has the extension of `png`.<br>
 Arg: 1=>keyword(required) / 2=>relative_path(default: ./) / 3=>extention(default: png)
 
 ### CopyImage
